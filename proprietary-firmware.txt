@@ -1,0 +1,12 @@
+# All blobs below are extracted from the release mentioned in proprietary-files.txt
+dpm.img;AB
+gz.img;AB
+lk.img;AB
+logo.img;AB
+mcupm.img;AB
+pi_img.img;AB
+preloader_raw.img;AB|d56c518947d3763ec9b25e77644da8d3d7db7279)
+scp.img;AB
+spmfw.img;AB
+sspm.img;AB
+tee.img;AB

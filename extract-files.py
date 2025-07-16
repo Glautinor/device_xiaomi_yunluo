@@ -14,6 +14,10 @@ from extract_utils.fixups_lib import (
     libs_proto_3_9_1,
     libs_proto_21_12,
 )
+from extract_utils.fixups_lib import (
+    lib_fixups,
+    lib_fixups_user_type,
+)
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
@@ -23,7 +27,8 @@ namespace_imports = [
     "device/xiaomi/yunluo",
     "hardware/mediatek",
     "hardware/mediatek/libmtkperf_client",
-    "hardware/lineage/compat"
+    "hardware/lineage/compat",
+    "hardware/xiaomi"
 ]
 
 
@@ -127,6 +132,7 @@ module = ExtractUtilsModule(
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
     check_elf=True,
+    add_firmware_proprietary_file=True
 )
 
 if __name__ == "__main__":
