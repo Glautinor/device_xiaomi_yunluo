@@ -34,7 +34,7 @@ AB_OTA_PARTITIONS := \
 PRODUCT_PACKAGES += \
     create_pl_dev \
     create_pl_dev.recovery
-    
+
 PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
@@ -254,7 +254,7 @@ PRODUCT_PACKAGES += \
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-    
+
 # Init scripts
 PRODUCT_PACKAGES += \
     init.insmod.sh \
@@ -278,7 +278,7 @@ PRODUCT_PACKAGES += \
 # GNSS
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
-    
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
