@@ -297,3 +297,7 @@ $(call inherit-product, vendor/xiaomi/yunluo/yunluo-vendor.mk)
 # FM Radio
 PRODUCT_PACKAGES += \
     FMRadio
+
+#Screen Recorder
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service \
