@@ -1,0 +1,10 @@
+#AxionAOSP
+allow init sysfs_battery_input_suspend:file rw_file_perms;
+
+# Declare the custom sysfs type for battery input_suspend
+type sysfs_battery_input_suspend, fs_type, sysfs_type;
+
+# give init rw to the tuning files
+allow init proc_dirty:file { getattr open read write };
+allow init proc_drop_caches:file { getattr open read write };
+allow init proc_sched:file { getattr open read write };

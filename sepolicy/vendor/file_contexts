@@ -16,3 +16,5 @@
 # Touch panel gesture
 /sys/devices/virtual/touch/touch_dev/gesture_double_tap_state u:object_r:sysfs_tp_gesture:s0
 
+#AxionAOSP
+/sys/class/power_supply/battery/input_suspend    u:object_r:sysfs_battery_input_suspend:s0

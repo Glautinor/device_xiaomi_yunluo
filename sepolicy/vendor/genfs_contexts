@@ -34,3 +34,5 @@ genfscon sysfs /devices/platform/soc/soc:extcon_usb/extcon u:object_r:sysfs_extc
 # Graphics
 genfscon sysfs /devices/platform/soc/13000000.mali u:object_r:sysfs_gpu:s0
 
+#AxionAOSP
+genfscon proc /sys/vm/dirty_ratio                   u:object_r:proc_dirty:s0
