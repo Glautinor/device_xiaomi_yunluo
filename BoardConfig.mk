@@ -15,6 +15,9 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a76
 TARGET_CPU_VARIANT_RUNTIME := cortex-a76
 
+#Screen Recorder
+BOARD_USE_CODEC2 := true
+
 # Enable 64-bit for non-zygote.
 ZYGOTE_FORCE_64 := true
 

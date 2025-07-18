@@ -301,3 +301,10 @@ PRODUCT_PACKAGES += \
 #Screen Recorder
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service \
+
+PRODUCT_COPY_FILES += \
+    $(TOPDIR)frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:vendor/etc/media_codecs_google_video.xml \
+    $(TOPDIR)frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:vendor/etc/media_codecs_google_audio.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/media/media_codecs_c2.xml:vendor/etc/media_codecs_c2.xml
