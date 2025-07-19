@@ -131,6 +131,11 @@ media.c2.dmabuf.padding=3072
 persist.vendor.video.dfps.level=0
 ro.vendor.jpeg_decode_sw_opt=1
 vendor.mtk.vdec.waitkeyframeforplay=9
+vendor.media.omx=0
+debug.stagefright.c2inputsurface=-1
+debug.media.codec2=4
+debug.stagefright.ccodec=1
+media.settings.xml=/vendor/etc/mtk_platform_codecs_config.xml
 
 # Sensors
 persist.vendor.sensor.cali_sensor=101000100000000
