@@ -251,10 +251,6 @@ PRODUCT_PACKAGES += \
     LineageSDKOverlayYunluo \
     PowerOffAlarmOverlayYunluo
 
-# Public Libraries
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-
 # Init scripts
 PRODUCT_PACKAGES += \
     init.insmod.sh \
@@ -275,10 +271,6 @@ PRODUCT_PACKAGES += \
     fstab.mt8781.vendor_ramdisk \
     fstab.mt6789.vendor_ramdisk
 
-# GNSS
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
@@ -295,7 +287,7 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 $(call inherit-product, vendor/xiaomi/yunluo/yunluo-vendor.mk)
 
 # FM Radio
-PRODUCT_PACKAGES += \
-    FMRadio
+#PRODUCT_PACKAGES += \
+#    FMRadio
 
 #END

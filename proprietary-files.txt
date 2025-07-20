@@ -851,4 +851,4 @@ vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # FM Radio
-system_ext/lib64/libfmjni.so:system/lib64/prebuilt_libfmjni.so;FIX_SONAME
+#system_ext/lib64/libfmjni.so:system/lib64/prebuilt_libfmjni.so;FIX_SONAME
