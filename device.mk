@@ -320,6 +320,3 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Inherit our proprietary vendor
 $(call inherit-product, vendor/xiaomi/yunluo/yunluo-vendor.mk)
 
-# FM Radio
-PRODUCT_PACKAGES += \
-    FMRadio
