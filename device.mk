@@ -251,9 +251,9 @@ PRODUCT_PACKAGES += \
     LineageSDKOverlayYunluo \
     PowerOffAlarmOverlayYunluo
 
-# Public Libraries
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+# Overlays (voltage)
+DEVICE_PACKAGE_OVERLAYS += \
+    device/xiaomi/yunluo/overlay-voltage
 
 # Init scripts
 PRODUCT_PACKAGES += \
@@ -274,10 +274,6 @@ PRODUCT_PACKAGES += \
     fstab.mt8781 \
     fstab.mt8781.vendor_ramdisk \
     fstab.mt6789.vendor_ramdisk
-
-# GNSS
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -313,7 +309,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     PrebuiltGmsCore \
     GoogleServicesFramework \
     Phonesky
-    
+
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
 

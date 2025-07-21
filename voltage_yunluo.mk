@@ -29,4 +29,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
   BuildDesc="missi_pad_global-user 14 UP1A.231005.007 V816.0.9.0.ULYMIXM release-keys" \
   BuildFingerprint=Redmi/yunluo_global/yunluo:12/SP1A.210812.016/V816.0.9.0.ULYMIXM:user/release-keys
 
+# VoltageOS Stuffs
+VOLTAGE_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1920
+TARGET_FACE_UNLOCK_SUPPORTED := true
+PRODUCT_NO_CAMERA := false
+
+# include private signing keys
+-include vendor/voltage-priv/keys/keys.mk
