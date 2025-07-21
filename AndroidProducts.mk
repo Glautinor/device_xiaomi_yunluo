@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_yunluo.mk
+    $(LOCAL_DIR)/voltage_yunluo.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_yunluo-user \
-    lineage_yunluo-userdebug \
-    lineage_yunluo-eng
+    voltage_yunluo-user \
+    voltage_yunluo-userdebug \
+    voltage_yunluo-eng
