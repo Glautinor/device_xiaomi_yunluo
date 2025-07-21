@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/xiaomi/yunluo/device.mk)
 
 # Inherit some common LineageOS Stuff
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/voltage/config/common_full_tablet_wifionly.mk)
 
 # Disable Eppe
 TARGET_DISABLE_EPPE := true
