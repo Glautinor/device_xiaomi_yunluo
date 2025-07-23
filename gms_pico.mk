@@ -41,7 +41,6 @@ PRODUCT_PACKAGES += \
     WebViewGoogle \
     WebViewGoogle-Stub \
     talkback \
-    #Extra
     CalendarGooglePrebuilt \
     NgaResources \
     Photos
@@ -66,7 +65,6 @@ PRODUCT_PACKAGES += \
     SetupWizardPrebuilt \
     TurboPrebuilt \
     WellbeingPrebuilt \
-    #Extra
     FamilySpacePrebuilt \
     FilesPrebuilt \
     RecorderPrebuilt \
@@ -88,7 +86,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DocumentsUIGoogle \
     TagGoogle \
-    #Extra
     GooglePackageInstaller
 
 # system_ext/app
@@ -105,7 +102,6 @@ PRODUCT_PACKAGES += \
     SetupWizardPixelPrebuilt \
     QuickAccessWallet \
     WallpaperPickerGoogleRelease \
-    #Extra
     StorageManagerGoogle
 
 # PrebuiltGmsCore
