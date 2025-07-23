@@ -40,18 +40,20 @@ PRODUCT_PACKAGES += \
     TrichromeLibrary-Stub \
     WebViewGoogle \
     WebViewGoogle-Stub \
-    talkback
+    talkback \
+    #Extra
+    CalendarGooglePrebuilt \
+    NgaResources \
+    Photos
 
 # product/priv-app
 PRODUCT_PACKAGES += \
     AICorePrebuilt \
-    AndroidAutoStubPrebuilt \
     BetterBugStub \
     ConfigUpdater \
     CreativeAssistant \
     DeviceIntelligenceNetworkPrebuilt \
-    DevicePersonalizationPrebuiltPixel2020 \
-    GoogleDialer \
+    DevicePersonalizationPrebuiltPixel \
     GoogleOneTimeInitializer \
     GoogleRestorePrebuilt \
     KidsSupervisionStub \
@@ -63,24 +65,18 @@ PRODUCT_PACKAGES += \
     SettingsIntelligenceGooglePrebuilt \
     SetupWizardPrebuilt \
     TurboPrebuilt \
-    WellbeingPrebuilt
+    WellbeingPrebuilt \
+    #Extra
+    FamilySpacePrebuilt \
+    FilesPrebuilt \
+    RecorderPrebuilt \
+    PrebuiltBugle \
+    Velvet
 
 # product/priv-app
 ifneq ($(filter sailfish marlin walleye taimen blueline crosshatch sargo bonito flame coral sunfish bramble redfin barbet oriole raven bluejay panther cheetah lynx tangorpro felix shiba husky akita tokay caiman komodo comet frankel blazer mustang, $(LINEAGE_BUILD)),)
 PRODUCT_PACKAGES += \
     SCONE
-endif
-
-ifneq ($(filter flame coral redfin oriole raven panther cheetah lynx felix shiba husky akita tokay caiman komodo frankel blazer mustang, $(LINEAGE_BUILD)),)
-PRODUCT_PACKAGES += \
-    DreamlinerDreamsPrebuilt \
-    DreamlinerPrebuilt \
-    DreamlinerUpdater
-endif
-
-ifneq ($(filter husky akita tokay caiman komodo frankel blazer mustang, $(LINEAGE_BUILD)),)
-PRODUCT_PACKAGES += \
-    HealthIntelligencePrebuilt
 endif
 
 # system/app
@@ -91,7 +87,9 @@ PRODUCT_PACKAGES += \
 # system/priv-app
 PRODUCT_PACKAGES += \
     DocumentsUIGoogle \
-    TagGoogle
+    TagGoogle \
+    #Extra
+    GooglePackageInstaller
 
 # system_ext/app
 PRODUCT_PACKAGES += \
@@ -106,7 +104,9 @@ PRODUCT_PACKAGES += \
     NexusLauncherRelease \
     SetupWizardPixelPrebuilt \
     QuickAccessWallet \
-    WallpaperPickerGoogleRelease
+    WallpaperPickerGoogleRelease \
+    #Extra
+    StorageManagerGoogle
 
 # PrebuiltGmsCore
 PRODUCT_PACKAGES += \
