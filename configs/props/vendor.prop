@@ -156,12 +156,27 @@ ro.hardware.vulkan=mali
 
 # LMKD
 ro.lmk.kill_timeout_ms=100
-ro.lmk.psi_complete_stall_ms=70
-ro.lmk.psi_partial_stall_ms=70
-ro.lmk.swap_free_low_percentage=30
+ro.lmk.psi_complete_stall_ms=35
+ro.lmk.psi_partial_stall_ms=35
+ro.lmk.swap_free_low_percentage=10
 ro.lmk.swap_util_max=90
-ro.lmk.thrashing_limit=30
-ro.lmk.thrashing_limit_decay=2
+ro.lmk.thrashing_limit=100
+ro.lmk.thrashing_limit_decay=10
+#Glautinor
+ro.lmk.kill_heaviest_task=true
+ro.lmk.use_psi=true
+ro.lmk.medium=800
+ro.lmk.critical=0
+ro.lmk.critical_upgrade=false
+ro.lmk.upgrade_pressure=100
+ro.lmk.downgrade_pressure=100
+ro.lmk.kill_heavy_bg=true
+ro.lmk.kill_heaviest_task=true
+ro.lmk.enhance_batch_kill=true
+ro.lmk.thrashing_min_score_adj=0
+ro.lmk.use_minfree_levels=false
+ro.config.low_ram=false
+ro.lmk.use_new_strategy=true
 
 # Logd
 ro.logd.kernel=false
