@@ -9,5 +9,5 @@ $(call inherit-product, vendor/lineage/config/wifionly.mk)
 # GMS
 WITH_GMS ?= true
 ifeq ($(WITH_GMS),true)
-$(call inherit-product, device/xiaomi/yunluo/gms_pico.mk)
+$(call inherit-product, device/xiaomi/yunluo/evo/vendor/gms/gms_pico.mk)
 endif
