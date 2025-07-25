@@ -31,6 +31,27 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 #AxionAOSP
 
+# Inherit system_ext permissons
+$(call inherit-product, device/xiaomi/yunluo/addons/system_ext/blobs/system-ext_blobs.mk)
+
+#Gapps
+PRODUCT_PACKAGES += \
+    CalculatorGooglePrebuilt_85005407 \
+    GoogleContacts \
+    PrebuiltBugle \
+    LatinIMEGooglePrebuilt \
+    PrebuiltDeskClockGoogle_76004981 \
+    Photos \
+    CalendarGooglePrebuilt \
+    RecorderPrebuilt \
+    FilesPrebuilt \
+    StorageManagerGoogle
+
+#Lawnchair
+PRODUCT_PACKAGES += \
+    Lawnchair \
+    Lawnicons
+
 # Define rear camera specs (multiple sensors supported)
 AXION_CAMERA_REAR_INFO := 8
 
