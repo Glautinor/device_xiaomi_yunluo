@@ -15,20 +15,11 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a76
 TARGET_CPU_VARIANT_RUNTIME := cortex-a76
 
-# Audio
-BOARD_USES_ALSA_AUDIO := true
-
 # Enable 64-bit for non-zygote.
 ZYGOTE_FORCE_64 := true
 
 # Force any prefer32 targets to be compiled as 64 bit.
 IGNORE_PREFER32_ON_DEVICE := true
-
-# Include 64-bit mediaserver to support 64-bit only devices
-TARGET_DYNAMIC_64_32_MEDIASERVER := true
-
-# Include 64-bit drmserver to support 64-bit only devices
-TARGET_DYNAMIC_64_32_DRMSERVER := true
 
 # Build the 32 bit targets
 TARGET_2ND_ARCH := arm
