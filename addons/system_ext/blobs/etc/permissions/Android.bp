@@ -1,4 +1,5 @@
-// Copyright (C) 2016-2022 crDroid Android Project
+//
+// Copyright (C) 2024 The hentaiOS Project and its Proprietors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -11,10 +12,12 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+//
 
-runtime_resource_overlay {
-    name: "NavbarOnePlusPixelLauncherOverlay",
-    product_specific: true,
-    sdk_version: "current",
-    theme: "NavbarOnePlus",
+prebuilt_etc {
+    name: "privapp-permissions-google-se",
+    system_ext_specific: true,
+    sub_dir: "permissions",
+    src: "privapp-permissions-google-se.xml",
+    filename_from_src: true,
 }
