@@ -31,9 +31,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 #AxionAOSP
 
-# Inherit system_ext permissons
-$(call inherit-product, device/xiaomi/yunluo/addons/system_ext/blobs/system-ext_blobs.mk)
-
 #Gapps
 PRODUCT_PACKAGES += \
     CalculatorGooglePrebuilt_85005407 \
@@ -42,15 +39,12 @@ PRODUCT_PACKAGES += \
     LatinIMEGooglePrebuilt \
     PrebuiltDeskClockGoogle_76004981 \
     Photos \
-    CalendarGooglePrebuilt \
-    RecorderPrebuilt \
-    FilesPrebuilt \
-    StorageManagerGoogle
+    CalendarGooglePrebuilt
 
 #Lawnchair
-PRODUCT_PACKAGES += \
-    Lawnchair \
-    Lawnicons
+#PRODUCT_PACKAGES += \
+#    Lawnchair \
+#    Lawnicons
 
 # Define rear camera specs (multiple sensors supported)
 AXION_CAMERA_REAR_INFO := 8
@@ -73,8 +67,8 @@ BYPASS_CHARGE_SUPPORTED := true
 AXION_DEBUGGING_ENABLED := true
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2000
-TARGET_SCREEN_WIDTH := 1200
+TARGET_SCREEN_HEIGHT := 1200
+TARGET_SCREEN_WIDTH := 2000
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Define small and big core groups (used for setting processes affinity)

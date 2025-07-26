@@ -242,6 +242,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayYunluo \
+    SettingsProviderOverlay \
     SettingsResOverlayYunluo \
     TetheringResOverlayYunluo \
     WifiResOverlayYunluo
@@ -250,10 +251,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageSDKOverlayYunluo \
     PowerOffAlarmOverlayYunluo
-
-# Overlays (Axion)
-PRODUCT_PACKAGES += \
-    $(LOCAL_PATH)/overlay-axion
 
 # Init scripts
 PRODUCT_PACKAGES += \
@@ -289,5 +286,19 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Inherit our proprietary vendor
 $(call inherit-product, vendor/xiaomi/yunluo/yunluo-vendor.mk)
+
+# Setup Wizard
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.setupwizard.rotation_locked=false
+
+# Temporary override to synchronise changes in pa/ and ag/. See b/246793311 for context
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    debug.sf.ignore_hwc_physical_display_orientation=true
+
+# Set boot animation orientation and default display rotation to be landscape since Tangor
+# natural orientation is portrait. Id at the end corresponds to the display id on the device.
+# See b/246793311 for context
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.bootanim.set_orientation_4627039422300187648=ORIENTATION_90
 
 #END
