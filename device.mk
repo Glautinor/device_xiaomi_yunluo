@@ -251,6 +251,10 @@ PRODUCT_PACKAGES += \
     LineageSDKOverlayYunluo \
     PowerOffAlarmOverlayYunluo
 
+# Overlays (Axion)
+PRODUCT_PACKAGES += \
+    $(LOCAL_PATH)/overlay-axion
+
 # Init scripts
 PRODUCT_PACKAGES += \
     init.insmod.sh \
