@@ -114,10 +114,7 @@ ro.surface_flinger.set_touch_timer_ms=3000
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 vendor.hbm.enable=false
 ro.minui.default_rotation=ROTATION_RIGHT
-# Tell SurfaceFlinger that the panel’s natural orientation is 90°
-ro.surface_flinger.primary_display_orientation=ORIENTATION_90
-# Make SurfaceFlinger forward that value to InputReader
-debug.sf.ignore_hwc_physical_display_orientation=true
+ro.surface_flinger.primary_display_orientation=ORIENTATION_180
 
 # DRM
 drm.service.enabled=true
