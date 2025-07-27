@@ -293,12 +293,15 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 
 # Temporary override to synchronise changes in pa/ and ag/. See b/246793311 for context
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    debug.sf.ignore_hwc_physical_display_orientation=true
+    debug.sf.ignore_hwc_physical_display_orientation=true \
+    ro.surface_flinger.primary_display_orientation=ORIENTATION_180
 
 # Set boot animation orientation and default display rotation to be landscape since Tangor
 # natural orientation is portrait. Id at the end corresponds to the display id on the device.
 # See b/246793311 for context
+# Set recovery orientation
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.bootanim.set_orientation_4627039422300187648=ORIENTATION_90
+    ro.bootanim.set_orientation_4627039422300187648=ORIENTATION_90 \
+    ro.minui.default_rotation=ROTATION_LEFT
 
 #END
